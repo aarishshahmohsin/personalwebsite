@@ -1,0 +1,37 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "Aarish Shah Mohsin"
+theme: "hugo-xmin"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+footnotereturnlinkcontents: "↩"
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: About
+      url: "about/"
+      weight: 2
+    - name: Tags
+      url: "tags/"
+      weight: 4
+    - name: Resume
+      url: "http://example.org/"
+
+params:
+  description: "A website built through Hugo and blogdown."
+  footer: "&copy; [Aarish Shah Mohsin](https://aarish.tech) | [Github](https://github.com/aarishshahmohsin) | [LinkedIn](https://www.linkedin.com/in/aarish-sm/)"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
